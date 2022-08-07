@@ -32,7 +32,7 @@ const BookingTicketResult = () => {
               -{thongTinPhim?.tenCumRap.split("-")[1]}
             </span>
           </p>
-          <p className={classes.address}>{thongTinPhim?.address}</p>
+          <p className={classes.address}>{thongTinPhim?.diaChi}</p>
           <table className={classes.table}>
             <tbody>
               <tr>

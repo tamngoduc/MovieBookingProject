@@ -66,3 +66,12 @@ export const getAccountInfo = (user) => {
     }
   };
 };
+
+export const setStatusIsExistUserModified = (isExistUserModified) => {
+  return (dispatch) => {
+    dispatch({
+      type: actionTypes.SET_IS_EXIST_USER_MODIFIED,
+      isExistUserModified,
+    });
+  };
+};

@@ -12,6 +12,9 @@ import NotFound from "./pages/NotFound/NotFound";
 import { theme } from "./util/config";
 import BookingTicket from "./pages/BookingTicket/BookingTicket";
 import UserProfile from "./pages/UseProfile/UseProfile";
+import AdminTenplate from "./templates/AdminTemplate/AdminTemplate";
+import UserManagement from "./pages/UserManagement/UserManagement";
+import MovieManagement from "./pages/MovieManagement/MovieManagement";
 
 function App() {
   return (
@@ -32,6 +35,11 @@ function App() {
           </Route>
 
           <Route path="/datve/:maLichChieu" element={<BookingTicket />} />
+
+          <Route element={<AdminTenplate />}>
+            <Route path="admin/users" element={<UserManagement />} />
+            <Route path="admin/movies" element={<MovieManagement />} />
+          </Route>
 
           <Route path="*" element={<NotFound />} />
         </Routes>

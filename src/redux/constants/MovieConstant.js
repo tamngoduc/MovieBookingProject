@@ -31,3 +31,5 @@ export const GET_MOVIE_LIST_FAIL2 = "GET_MOVIE_LIST_FAIL2";
 export const ADD_MOVIE_UPLOAD_REQUEST = "ADD_MOVIE_UPLOAD_REQUEST";
 export const ADD_MOVIE_UPLOAD_SUCCESS = "ADD_MOVIE_UPLOAD_SUCCESS";
 export const ADD_MOVIE_UPLOAD_FAIL = "ADD_MOVIE_UPLOAD_FAIL";
+
+export const SAVE_BEFOREINSTALLPROMPT_EVENT = "SAVE_BEFOREINSTALLPROMPT_EVENT"; // Lưu lại event beforeinstallprompt để hiện lại màn hình install pwa khi cần

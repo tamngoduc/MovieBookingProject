@@ -22,12 +22,16 @@ const movieAPI = {
     return axiosClient.post("QuanLyPhim/ThemPhimUploadHinh", formData);
   },
 
-  updateMovie: (movie) => {
+  updateMovieUpload: (movie) => {
     const formData = new FormData();
     for (const key in movie) {
       formData.append(key, movie[key]);
     }
     return axiosClient.post("QuanLyPhim/CapNhatPhimUpload", formData);
+  },
+
+  updateMovie: (movie) => {
+    return axiosClient.post("QuanLyPhim/CapNhatPhim", movie);
   },
 
   deleleMovie: (movieID) => {

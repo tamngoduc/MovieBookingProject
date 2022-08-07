@@ -14,7 +14,7 @@ export const RESET_DATA_BOOKTICKET = "RESET_DATA_BOOKTICKET";
 export const RESET_ALERT_OVER10 = "RESET_ALERT_OVER10";
 export const SET_ALERT_OVER10 = "SET_ALERT_OVER10";
 
-// booking ticked
+// booking ticket
 export const BOOK_TICKET_REQUEST = "BOOK_TICKET_REQUEST";
 export const BOOK_TICKET_SUCCESS = "BOOK_TICKET_SUCCESS";
 export const BOOK_TICKET_FAIL = "BOOK_TICKET_FAIL";

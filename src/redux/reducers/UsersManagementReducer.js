@@ -132,8 +132,7 @@ const UsersManagementReducer = (state = initialState, action) => {
     }
 
     case actionTypes.SET_IS_EXIST_USER_MODIFIED: {
-      state.isExistUserModified = action.isExistUserModified;
-      return state;
+      return { ...state, isExistUserModified: action.isExistUserModified };
     }
 
     case actionTypes.GET_USER_INFO_REQUEST: {

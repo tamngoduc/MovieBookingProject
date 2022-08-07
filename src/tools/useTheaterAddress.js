@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axiosClient from "../services/axiosClient";
 
-export default function useTheaterAddress(showtimeID) {
+const useTheaterAddress = (showtimeID) => {
   const [addressData, setAddressData] = useState({ address: "loading..." });
   useEffect(() => {
     const loadData = async () => {
@@ -19,4 +19,6 @@ export default function useTheaterAddress(showtimeID) {
     loadData();
   }, []);
   return { address: addressData.address };
-}
+};
+
+export default useTheaterAddress;

@@ -8,7 +8,7 @@ const bookingAPI = {
   },
 
   bookTicket: (data) => {
-    return axiosClient.post("QuanLyDatVe/DatVe", data);
+    return axiosClient.post(`/QuanLyDatVe/DatVe`, data);
   },
 
   createShowtime: (data) => {

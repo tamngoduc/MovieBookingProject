@@ -3,15 +3,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { makeStyles } from "@material-ui/core";
 import * as yup from "yup";
 import { ErrorMessage, Field, Form, Formik } from "formik";
-import AppBar from "@material-ui/core/AppBar";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
-import Box from "@material-ui/core/Box";
-import Avatar from "@material-ui/core/Avatar";
+
 import Swal from "sweetalert2";
 import CircularProgress from "@material-ui/core/CircularProgress";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { useTheme } from "@material-ui/core/styles";
 import NavigationIcon from "@material-ui/icons/Navigation";
 import Fab from "@material-ui/core/Fab";
 import { useNavigate } from "react-router-dom";

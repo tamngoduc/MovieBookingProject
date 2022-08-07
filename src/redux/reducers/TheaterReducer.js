@@ -4,6 +4,10 @@ const initialState = {
   theaterSystemList: [],
   theaterSystemListLoading: false,
   theaterSystemListError: null,
+
+  theaterSystemList2: [],
+  theaterSystemListLoading2: false,
+  theaterSystemListError2: null,
 };
 
 const TheaterReducer = (state = initialState, action) => {
